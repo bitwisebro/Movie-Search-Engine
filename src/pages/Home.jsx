@@ -1,5 +1,6 @@
 import MovieCard from "../components/MovieCard";
 import { useState } from "react";
+import "../css/Home.css";
 
 function Home() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -10,7 +11,11 @@ function Home() {
     { id: 1, title: "Gangajal", release_date: "2002" },
   ];
 
-  const handleSearch = () => {};
+  const handleSearch = (e) => {
+    e.preventDefault();
+    alert(searchQuery);
+    setSearchQuery("------");
+  };
 
   return (
     <div className="home">
