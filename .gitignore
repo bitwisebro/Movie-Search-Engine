@@ -1,6 +1,8 @@
 #Vite
 .vite/
 
+.env
+
 # Logs
 logs
 *.log
