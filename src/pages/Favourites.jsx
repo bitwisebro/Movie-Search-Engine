@@ -3,11 +3,12 @@ import { useMovieContext } from "../context/MovieContext";
 import MovieCard from "../components/MovieCard";
 
 function Favorites() {
-  const { favorites } = useMovieContext();
+  const { favorites = [] } = useMovieContext();
+  console.log("hsdifh");
 
-  if (favorites)
+  if (favorites && favorites.length > 0)
     return (
-      <div>
+      <div className="favorites">
         <h2>Your Favorites</h2>
         <div className="movies-grid">
           {favorites.map((movie) => (
