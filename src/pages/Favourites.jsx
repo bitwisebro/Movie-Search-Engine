@@ -4,7 +4,6 @@ import MovieCard from "../components/MovieCard";
 
 function Favorites() {
   const { favorites = [] } = useMovieContext();
-  console.log("hsdifh");
 
   if (favorites && favorites.length > 0)
     return (
